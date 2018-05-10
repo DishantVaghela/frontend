@@ -1,4 +1,4 @@
-function getHTMLFileName() {
+function getFileName() {
 	fileName = location.href.split("/").slice(-1);
 	return fileName;
 }
