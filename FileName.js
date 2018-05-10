@@ -3,7 +3,7 @@ function getHTMLFileName() {
 	return fileName;
 }
 function removeExtentionFromFileName(fileName) {
-	fileNameWithoutExtention = /[^.]*/.exec(fileName)[0];
+	fileNameWithoutExtention = /[^.]*/.exec(fileName);
 	return fileNameWithoutExtention;
 }
 
