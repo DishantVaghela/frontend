@@ -1,7 +1,7 @@
-function setHeadTitle(headTitle) {
+function setHTMLHeadTitle(headTitle) {
 	document.getElementsByTagName("title")[0].innerHTML = headTitle;
 }
-function setHeadTitleAutomatically() {
+function setHTMLHeadTitleAutomatically() {
 	fileName = location.href.split("/").slice(-1);
 	fileNameWithoutExtention = /[^.]*/.exec(fileName);
 	document.getElementsByTagName("title")[0].innerHTML = fileNameWithoutExtention;
