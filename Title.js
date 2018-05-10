@@ -4,5 +4,5 @@ function setHTMLHeadTitle(headTitle) {
 function setHTMLHeadTitleAutomatically() {
 	fileName = location.href.split("/").slice(-1);
 	fileNameWithoutExtention = /[^.]*/.exec(fileName);
-	document.getElementsByTagName("title")[0].innerHTML = fileNameWithoutExtention;
+	setHTMLHeadTitle(fileNameWithoutExtention);
 }
