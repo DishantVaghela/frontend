@@ -1,13 +1,10 @@
 function getPathElements() {
-	var pathElements = location.pathname.split("/");
-	return fileName;
+	return location.pathname.split("/");
 }
 function getFileName() {
-	fileName = location.href.split("/").slice(-1);
-	return fileName;
+	return getPathElements().slice(-1);
 }
 function removeExtentionFromFileName(fileName) {
-	fileNameWithoutExtention = /[^.]*/.exec(fileName);
-	return fileNameWithoutExtention;
+	return /[^.]*/.exec(fileName);
 }
 
