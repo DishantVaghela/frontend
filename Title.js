@@ -1,6 +1,6 @@
-function setHTMLHeadTitle(headTitle) {
-	document.getElementsByTagName("title")[0].innerHTML = headTitle;
+function setHTMLDocumentTitle(headTitle) {
+	document.title.innerHTML = headTitle;
 }
-function setHTMLHeadTitleAutomatically() {
-	setHTMLHeadTitle(/[^.]*/.exec(location.pathname.split("/").slice(-1)));
+function setHTMLDocumentTitleAutomatically() {
+	setHTMLDocumentTitle(/[^.]*/.exec(location.pathname.split("/").slice(-1)));
 }
