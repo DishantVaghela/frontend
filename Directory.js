@@ -1,4 +1,4 @@
-function getPathElements() {
+function getURLPathElements() {
 	return location.pathname.split("/");
 }
 function getFileName() {
