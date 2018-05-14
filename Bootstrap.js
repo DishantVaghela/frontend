@@ -1,4 +1,4 @@
-function includeBootstrap() {
+
   var linkElement = document.createElement("link");
 
   var relAttribute = document.createAttribute("rel");
@@ -30,4 +30,3 @@ function includeBootstrap() {
   scriptElement1.attributes.setNamedItem(srcAttribute1);
 
   document.head.appendChild(scriptElement1);
-}
