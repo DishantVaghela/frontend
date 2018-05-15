@@ -2,14 +2,12 @@ function setHTMLDocumentTitle(headTitle) {
 	document.title = headTitle;
 }
 function setHTMLDocumentTitleAutomatically() {
-	var scriptElement = document.createElement("script");
+	var my_awesome_script = document.createElement('script');
 
-	var srcAttribute = document.createAttribute("src");
-	srcAttribute.value = "https://rawgit.com/DishantVaghela/JavaScript/master/Directory.js";
+my_awesome_script.setAttribute('src','https://rawgit.com/DishantVaghela/JavaScript/master/Directory.js');
 
-	scriptElement.attributes.setNamedItem(srcAttribute);
-
-	document.head.appendChild(scriptElement);
+document.head.appendChild(my_awesome_script);
+	
 	
 	setHTMLDocumentTitle(removeExtentionFromFileName(getFileName(getURLPathElements())));
 }
