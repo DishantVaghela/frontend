@@ -22,6 +22,21 @@ function includeBootstrap() {
   linkElement.attributes.setNamedItem(relAttribute);
 
   var hrefAttribute = document.createAttribute("href");
+  hrefAttribute.value = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+
+  linkElement.attributes.setNamedItem(hrefAttribute);
+
+  document.head.appendChild(linkElement);
+}
+function includexyz() {
+  var linkElement = document.createElement("link");
+
+  var relAttribute = document.createAttribute("rel");
+  relAttribute.value = "stylesheet";
+
+  linkElement.attributes.setNamedItem(relAttribute);
+
+  var hrefAttribute = document.createAttribute("href");
   hrefAttribute.value = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css";
 
   linkElement.attributes.setNamedItem(hrefAttribute);
