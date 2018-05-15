@@ -1,3 +1,18 @@
+function includeFontAwesome() {
+  var linkElement = document.createElement("link");
+
+  var relAttribute = document.createAttribute("rel");
+  relAttribute.value = "stylesheet";
+
+  linkElement.attributes.setNamedItem(relAttribute);
+
+  var hrefAttribute = document.createAttribute("href");
+  hrefAttribute.value = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+  linkElement.attributes.setNamedItem(hrefAttribute);
+
+  document.head.appendChild(linkElement);
+}
 function includeBootstrap() {
   var linkElement = document.createElement("link");
 
