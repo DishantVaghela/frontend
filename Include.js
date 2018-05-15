@@ -43,6 +43,11 @@ function includeGoogleIcons() {
 
   document.head.appendChild(linkElement);
 }
+function includeIcons() {
+  includeFontAwesome();
+  includeBootstrap();
+  includeGoogleIcons();
+}
 function includexyz() {
   var linkElement = document.createElement("link");
 
