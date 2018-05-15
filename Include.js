@@ -28,6 +28,21 @@ function includeBootstrap() {
 
   document.head.appendChild(linkElement);
 }
+function includeGoogleIcons() {
+  var linkElement = document.createElement("link");
+
+  var relAttribute = document.createAttribute("rel");
+  relAttribute.value = "stylesheet";
+
+  linkElement.attributes.setNamedItem(relAttribute);
+
+  var hrefAttribute = document.createAttribute("href");
+  hrefAttribute.value = "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+  linkElement.attributes.setNamedItem(hrefAttribute);
+
+  document.head.appendChild(linkElement);
+}
 function includexyz() {
   var linkElement = document.createElement("link");
 
