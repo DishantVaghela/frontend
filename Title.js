@@ -1,7 +1,8 @@
 function setHTMLDocumentTitle(headTitle) {
 	document.title = headTitle;
 }
-function setHTMLDocumentTitleAutomatically(array,callback) {
+function setHTMLDocumentTitleAutomatically(callback) {
+	var array = ["https://rawgit.com/DishantVaghela/JavaScript/master/Directory.js"];
 	var loader = function(src,handler){
         var script = document.createElement("script");
         script.src = src;
