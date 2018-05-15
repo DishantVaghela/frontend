@@ -7,7 +7,7 @@ function includeBootstrap() {
   linkElement.attributes.setNamedItem(relAttribute);
 
   var hrefAttribute = document.createAttribute("href");
-  hrefAttribute.value = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+  hrefAttribute.value = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css";
 
   linkElement.attributes.setNamedItem(hrefAttribute);
 
@@ -25,9 +25,18 @@ function includeBootstrap() {
   var scriptElement1 = document.createElement("script");
 
   var srcAttribute1 = document.createAttribute("src");
-  srcAttribute1.value = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js";
+  srcAttribute1.value = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js";
 
   scriptElement1.attributes.setNamedItem(srcAttribute1);
 
   document.head.appendChild(scriptElement1);
+  
+  var scriptElement2 = document.createElement("script");
+
+  var srcAttribute2 = document.createAttribute("src");
+  srcAttribute2.value = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js";
+
+  scriptElement2.attributes.setNamedItem(srcAttribute2);
+
+  document.head.appendChild(scriptElement2);
 }
