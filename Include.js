@@ -44,14 +44,15 @@ function includeGoogleIcons() {
   document.head.appendChild(linkElement);
 }
 function includeIcons() {
-  includeFontAwesome();
-  includeBootstrap();
-  includeGoogleIcons();
-  var script   = document.createElement("script");
+	var script   = document.createElement("script");
 	script.type  = "text/javascript";
 	script.src   = "https://rawgit.com/DishantVaghela/JavaScript/master/Directory.js";    // use this for linked script
 	script.text  = "alert('voila!');";               // use this for inline script
 	document.body.appendChild(script);
+  includeFontAwesome();
+  includeBootstrap();
+  includeGoogleIcons();
+  
 }
 function includexyz() {
   var linkElement = document.createElement("link");
