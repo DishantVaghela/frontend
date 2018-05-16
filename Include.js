@@ -3,6 +3,10 @@ var include = document.body.getAttribute("onload");
 if(include.search("includeScriptDirectory()") >= 0) {
 	includeScript("https://rawgit.com/DishantVaghela/JavaScript/master/Directory.js");
 }
+if(include.search("includeScriptDirectory()") >= 0) {
+	includeScript("https://rawgit.com/DishantVaghela/JavaScript/master/Title.js");
+}
+
 function includeScript(src) {
 	var script   = document.createElement("script");
 	script.type  = "text/javascript";
