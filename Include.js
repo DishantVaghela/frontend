@@ -1,10 +1,9 @@
-var hTML = document.documentElement.innerHTML;
-if(hTML.search("includeDirectory") >= 0) {
+
 	var script   = document.createElement("script");
 	script.type  = "text/javascript";
 	script.src   = "https://rawgit.com/DishantVaghela/JavaScript/master/Directory.js";    
 	document.body.appendChild(script);
-}
+
 function includeFontAwesome() {
   var linkElement = document.createElement("link");
 
