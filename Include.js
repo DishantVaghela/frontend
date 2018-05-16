@@ -1,7 +1,7 @@
 //declare includeScript<scriptname>() functions at the end of the onload event  
 var include = document.body.getAttribute("onload");
 if(include.search("includeScriptDirectory()") >= 0) {
-	includeScript("https://rawgit.com/DishantVaghela/JavaScript/master/Include.js");
+	includeScript("https://rawgit.com/DishantVaghela/JavaScript/master/Directory.js");
 }
 function includeScript(src) {
 	var script   = document.createElement("script");
