@@ -1,4 +1,7 @@
-
+var hTML = document.documentElement.innerHTML;
+				if(hTML.search("setHTMLDocumentTitleAutomatically")) {
+					alert(hTML);
+				}
 function includeFontAwesome() {
   var linkElement = document.createElement("link");
 
