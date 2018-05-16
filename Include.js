@@ -6,7 +6,6 @@ if(include.search("includeScriptDirectory()") >= 0) {
 if(include.search("includeScriptTitle()") >= 0) {
 	includeScript("https://rawgit.com/DishantVaghela/JavaScript/master/Title.js");
 }
-
 function includeScript(src) {
 	var script   = document.createElement("script");
 	script.type  = "text/javascript";
@@ -14,19 +13,10 @@ function includeScript(src) {
 	document.body.appendChild(script);
 }
 function includeFontAwesome() {
-  var linkElement = document.createElement("link");
-
-  var relAttribute = document.createAttribute("rel");
-  relAttribute.value = "stylesheet";
-
-  linkElement.attributes.setNamedItem(relAttribute);
-
-  var hrefAttribute = document.createAttribute("href");
-  hrefAttribute.value = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
-
-  linkElement.attributes.setNamedItem(hrefAttribute);
-
-  document.head.appendChild(linkElement);
+  	var link = document.createElement("link");
+	link.rel = "stylesheet";
+	link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+	document.head.appendChild(link);
 }
 function includeBootstrap() {
   var linkElement = document.createElement("link");
