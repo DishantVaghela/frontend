@@ -1,9 +1,11 @@
-
+//declare includeScript<scriptname>() functions at the end of the onload event  
+var include = document.body.getAttribute("onload");
+if(include.search("includeScriptDirectory()") >= 0) {
 	var script   = document.createElement("script");
 	script.type  = "text/javascript";
 	script.src   = "https://rawgit.com/DishantVaghela/JavaScript/master/Directory.js";    
 	document.body.appendChild(script);
-
+}
 function includeFontAwesome() {
   var linkElement = document.createElement("link");
 
