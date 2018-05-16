@@ -1,5 +1,5 @@
 var hTML = document.documentElement.innerHTML;
-				if(hTML.search("setHTMLDocumentTitleAutomatically")) {
+				if(hTML.search("setHTMLDocumentsTitleAutomatically")) {
 					alert(hTML);
 				}
 function includeFontAwesome() {
