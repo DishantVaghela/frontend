@@ -13,9 +13,12 @@ function includeScript(src) {
 	document.body.appendChild(script);
 }
 function includeFontAwesome() {
-  	var link = document.createElement("link");
+  	link("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+}
+function link (href) {
+	var link = document.createElement("link");
 	link.rel = "stylesheet";
-	link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+	link.href = href;
 	document.head.appendChild(link);
 }
 function includeBootstrap() {
